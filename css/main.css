@@ -14,9 +14,9 @@
     ". posts posts posts posts .";
 }
 
-.area-border {
+/* .area-border { 
     border: 1px solid black;
-}
+}*/
 
 .nav {
     grid-area: nav;
@@ -77,10 +77,26 @@ img{
 
 .posts {
     grid-area: posts;
-    height: 2000xpx
-;}
+    height: 2000xpx;}
 
-.ad {
-    grid-area: ad;
+.post-card{
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 25px;
 }
 
+.card-links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-links > a{
+    color: black;
+    text-decoration: none;
+}
+
+.card-links > a:hover{
+    color: red;
+    background-color: dodgerblue
+    text-decoration: underline;
+}
