@@ -14,6 +14,22 @@
     ". posts posts posts posts .";
 }
 
+@media (min-width: 992px) {
+    .container {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 3fr 5fr 1fr;
+        grid-template-rows: 10vh 40vh 40vh 1fr;
+        gap: 3vh 1vw;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "nav nav nav nav"
+        ". prof-pic posts ."
+        ". prof-info posts ."
+        ". . posts .";
+    }
+}
+
 /* .area-border { 
     border: 1px solid black;
 }*/
@@ -83,6 +99,7 @@ img{
     border: 1px solid black;
     padding: 1em;
     border-radius: 25px;
+    margin: 2vh;
 }
 
 .card-links{
